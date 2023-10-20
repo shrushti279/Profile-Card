@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card UI</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='s">
+</head>
+<body >
+    <div class="profile-card">
+        <div class="image">
+            <img src="profile.webp" alt="" class="profile-img">
+        </div>
+        <div class="text-data">
+            <span class="name">Shrushti Kale</span>
+            <span class="job">SOFTWARE DEVELOPER</span>
+
+          
+        </div>
+        <div class="media-buttons">
+            <a href="#"  style="background:#f9f9fa;" class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbpJREFUSEu11U+IjlEUx/HPlELGQjZCmo3FFMmSlCyEpCGzENlQyEImJQv5kyzUCAtmahY2ykLUTP6syELWlv6WCBsLiymK0Kn76un2PPd5X8zd3XvO+X3vufeec/vM8OibYX1tgNnYic1YhQH8wls8wwPcwfemjZYAW3AtiZYSfY1DeFjn1AQ4g9M9HN9PHMfFPKYOcBanehCvuh7FlepCDtiGqYL4ZxzDY7xLfqNpLaaRyXo86WhUAf14hUUNgB9YgReZvQoIU9hXdi6+CoiLGivs/iZ2V+wbsRabsCaL247JWKsC7mJrAXAS55N9GLcKvhM4kAM+YHEhaASXkz0u81LBN2pkdQ74ijn/CfAFC3LANOZlgE8tWYX7I2zI4kJrfg54ieWZ40csaamJ91ia+TzHYA64gT09ZhC96lvNBq5jXw7YhXiKTaOXS659prPwBssaCN0C/hxPnkHMo4Pe/wdAtPJ1eNrRqGt20ayO1EC6yeBc3ijrALE23qnECqgNcAEn8o2VPpy9qVoXpqAmQHSAg7hXd7RtX+Zc7MeO9DVeTSKHMYTbiCf5V19mS311Z27LoDuVgtdvdh5WGZl8sDgAAAAASUVORK5CYII="/>
+            </a>
+            <a href="#" style="background:#eaecee;" class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYpJREFUSEvd1bFLVmEUx/HPa0GC0VRDoJhBRFAR4aSjERSBKSFF0JCDSHtRFP4BujgoLRGBS4uDIDS4iLiEgVFDk1EQBeEkQZqgHLgvXG73Xu/7wrv4bPc5z/l9n3Oec86tafGqtVjf4QN04M8BaTuBCdxCD/5hBs9wGoPJ917opFN0BJ8xgk8lkCUM5Ni/owv38LZuTwPO4Ct+YwirOSJX8aEEvoZlzGE9G0E7tnA0EXiFF/iZEryfOBcxIr2P8CYvgtiLW/dlvFewgPe4gumSCF7jYdqeTtFxnMc7nGyyPybxuAjQiW/YxKkmAZGe2SJAGzbQ3aR4uF3AlyJA7A8nJVZ/6EZYUYFnsw55oyL64DkuNaKOcbysAriJxQbFo8nOYacKIM5EHT+oCNlFf1LG/7kUTdN48It4irsloJg3o4j6z115gBh4vXiCGyXifxGdPV8WaRpwDVO4nBmCef7RjGOI3JeubAQxiu/gNq7jGLbxCz8QkzRu/PEg4br98P3RqkZe+VzLU7QP6ls9Gf+7N38AAAAASUVORK5CYII="/>
+            </a>
+            <a href="#" style="background:#f8f6f7;"class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhZJREFUSEvF1UvIT1sYBvDfhyLCRGfkVigkOSeShAFSSnLJ3cQEZ6DIpchAiVxCRgYMJLdco5SYSUkk5XY60emUCSMycu/R+tdu9999X+rrW/Xvv/e73vU+z/s8a63doZtHRzfX12MAo7AFMzCBRiI/8Az3cAz/1hVp18EGHEcf/I8HeNUg5V+YhGH4gr9xsppbB5hcCr7AIrzuokfp8gaGYwqetNbVAa5iPsbivy4UX4s9+IB1eITrWNIEkKJhH5Dq6IW5GI9veIm7JXa7SDmiAAzByCaAjziLjZXq0fciptVAY+wpvMMfOI0oMA8DmgC+4zC2l4Qwv18YbcUd9C7MD5ZdMxPZTRkhsrTk/ArUPUjifuwsC5aVRfm/VOtgOS5gYTE40+eReIg1AoTZjjKf520YiE81gGj9Hnuxu8xF3lVV4u06yIHZXBYcKHINRvypjhbAPuwqE2ewpjOAo+UUZ0222+Wi65UaQJiGcVWivK/ozINqBy2TswUjVUzOCZ+DQ/gHs2omB7BfkwfROSzWV9gOLWZOb7NNV+JtJZ5tOhuRtK3Juazya3fQwmwBPuMWblaYt+o9xiCMaQII+8UY18WrotrURDzFOaxuAvgTYZHEGPymJkvTa4pfQ7yaWmq0lSjB1nUdgx8WSRL/iufoi9HF7MT7I7dw5jfhRJVF0xftdz44R9pd7z32yeyi9J2ndXsHPwHCfnMZO3GOhQAAAABJRU5ErkJggg=="/>
+            </a>
+            <a href="#" style="background:#faf8f8;"class="link">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUVJREFUSEvt1b8rR1EYx/GXHwP5kVBSZKBkMLAYbRZl8A8YlAH/hFgtyqTkX/Av2FDE4sdgkAwoiUHJj07dW9fJ955vYVCe7d7zPJ/3Oc/nOffW+OWo+WV9/4Bkh+MWdWMZA+hBf1KBd5zgFmdYwnVeVwQMYh8tVYiWpTxgFBchqQjYwsw3xfPyTczGgAOM/BBgD2Mx4A4dFQChz5NYy/xJ7eMSfTHgFbUVKt9Qh3osZoPQXEK5R3sR0ISnkoJwgiK8EyuYi3zMJR7RWgSEnb2UAMLpQk4eKcAzGuMWhV1WihwQIPPZrLeV5N+gKwaEFoVWfRUBMI3VKk0+xVAMCM73psajyvUdjMeAbUxVKZBK28gG4NNNHsZubk5KIbEePhWH8QnCc7jJC7jKBCaydw1fCAbPjqPpO8c6jvL8/x9O0qq/36IPaFYyGVscNCUAAAAASUVORK5CYII="/>
+            </a>
+          </div>
+          <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+           </div>
+
+           <div class="analytics">
+            <div class="data">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAdhJREFUSEvV1MurTmEYBfDfiUwRItdSGCjJwCWXJDGlGCi5TFxG/hUjl4wwoSgGZuR+KSkGipQIA5dSUgaE1un9tL9t7+/bnTrJW3v07netZz3PetaIcT4j44zvnxHsxnaswi/cwXlcKop3IN9aRot8gAs4V+9IXcEMnMXWltaFaBJWttxfwX587N1XCSbgNtbgAw7iHn5gA05henkYgAO4hYnl/gSmFYyN+Jl/qwSHcByfsQxva1XOxdXSss14V7ufjyeYgr04Uyd4hBXYh9NjdFdUncRNREWfgu9Fbip5M0aCxXiO95jVRjCvoT1d+ZbgWXkfnD4F97Eae4qTuoJW/zuMY7iMbXWCIziKT1jeMMRhhHPwFJOxs+xFn4L4Oyoy6BdYX3o5DDj3M4s9F+Ea4rLRU1+0DCYOyLC6kqTy6wh4BpydyR41EvSqyYItxMvyoO753vuA38WCAr6utPiP6rawi+QoiStel8ypk1TB0/v4PvPrO4PSNLGQ7GkiqYI/xqaSAH/Na1hch+QGllaUJHuiLm15WAb6pc0JwwjybmohST69Kmk6uzhuC74OslkXgh5JkjZKcmKCRPpA8CabDiomSi4i7diFb10WpKuCLliN//z/BL8BMG5eGQAMP+8AAAAASUVORK5CYII="/>
+                <span class="number">60k</span>
+               
+            </div>
+            <div class="data">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeVJREFUSEu11cvLTlEUBvDfJ7diQohMpEgp/gFEch0g90syMXDJwMTAX8BMIUokFCETkSRlQMoAAwOSTFAIpeRSaNXaep3e1znv0bfqdOqctdez17PX8+wBgxwDg1xfHcA4LMZSzMYU/MJLPMIN3MSHXhvtBTATh7GgQYcBeAu78Lya3w1gI85iKL7iAi7nTn9kgWHZ2XpswAh8wxpc6wSpAgQVkTAEF7Eb72u6mIATWIHYwDzcL2s6AUbjGSbhOHY2oKekxIai6814iln4Hj87AfbhIO5hLn72ARCpI/EQM7AV56oAjxN5Pu70Wbykr0tqY7qWVQE+I2gahS8tASbiDd4hzuYvit5ifP6IhDYxJjXxEWOrADHLC/O53aY6lucU3sWcKsAOHEvRLGoBENp4kIrfgyNVgOF4gcnYi0N9gMSYnsEWvMa0co5VoYVIgqrYTVjFgVzwL6yimyK0VbjeTWjl21qcT6sILVxFLOqMsIYl2ITViO5fpW0E/3+il9lNzQ7i0AqVYYBXML0CFoo9if34VG21zq7DKSO242iaWhQMu36SdF7Kue9KY1OAsjgMcFu6bKMZaAoQyg5nPd2oaoMzKClBUbjjynz3W7/2yjyVN1VcPK2ijqJWRZuM6X8XLgV+A1+4XhkRahc3AAAAAElFTkSuQmCC"/>
+                <span class="number">20k</span>
+               
+            </div>
+            <div class="data">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATFJREFUSEvN1M8qB1EcBfDPL1Y2Sv7Fkkcgz2FB9pYWspH4JUJCKVnxBHgULLyALWJJFkK6Nb8a14yf+c1M+S5vd8753nPOnIaap1Ezvn9NEJZrYiFR4Rg7sSJlXnCIpQhwC+vpszIET+iPCO4xUgXBBK4yAnKH0TIEY9jFTE76NrHRCcEggr7z6MIr9tCHWXziCAftTE4n4x1neMYyehDOTpMtgwdtJzY5KxktkAus4rYtaupCTPCIgQggbD2JmyLArbsxQYjZcAQU9J3CdRUEISErOUDnWCsrUXhR0HkRbxkmf+CkjMl5KgRftlMxfcE+ejGH7iSmQYFvU7QqxhPg6ZxNKuuiUBWX/Kj70lWRXvwBQ3WVXcDNSlxlEgWCOHF/6qJO/qVfvymaosIL1E7wBQoYOBnWbfzjAAAAAElFTkSuQmCC"/>
+                <span class="number">12k</span>
+               
+            </div>
+            
+    </div>
+    <footer>&copy;Designed by Shrushti Kale<footer>
+   
+            
+        </div>
+    </div>
+</body>
+</html>
